@@ -1,0 +1,274 @@
+{
+  "header": {
+    "discount": "Bizning saytimizda xarid qilganda 17% gacha chegirma",
+    "now-buy": "Hozir sotib olish",
+    "delivery": "Toshkent shahri bo'ylab BEPUL yetkazib berish",
+    "category": "Katalog",
+    "input-placeholder": "Mahsulotlar izlash",
+    "like": "Saralangan",
+    "basket": "Savat",
+    "home": "Bosh sahifa",
+    "user": "Kabinet",
+    "search-modal": "Tavsiya etilganlar",
+    "no-data": "Mahsulot topilmadi"
+  },
+  "home": {
+    "products": "Mahsulotlar",
+    "popular": "Mashhur",
+    "other": "Boshqa mahsulotlar"
+  },
+  "product-card": {
+    "usd": "so'm",
+    "comment": "sharhlar"
+  },
+  "footer": {
+    "about": "Kompaniya haqida",
+    "contact": "Biz bilan bog'lanish",
+    "faq": "Savol-Javob",
+    "secret": "Maxfiylik kelishuvi",
+    "use": "Foydalanuvchi kelishuvi",
+    "fruteacorp": "«2024© XK MCHJ «FRUTEACORP». Barcha huquqlar himoyalangan»",
+    "modal": {
+      "title": "Biz bilan bog'lanish",
+      "text": "Mutaxassislarimizga siz uchun qulay shaklda savol bering:",
+      "telegram": "Telegram",
+      "call": "O'zbekiston bo'ylab qung'iroq"
+    }
+  },
+  "faq": {
+    "title": "Savollar va javoblar"
+  },
+  "wishes": {
+    "title": "Istaklarim",
+    "choose-like": "Sizga yoqqanini qo'shing",
+    "click-like": "Mahsulotdagi ♡ belgisini bosing. Akkauntga kiring va barcha saralanganlar saqlanib qoladi",
+    "login-user": "Akkauntga kirish"
+  },
+  "basket": {
+    "no-data": "Savatda hozircha mahsulot yo'q",
+    "add-product": "Bosh sahifadagi to'plamlardan boshlang yoki kerakli mahsulotni qidiruv orqali toping",
+    "home": "Bosh sahifa",
+    "title": "Savatingiz",
+    "product": "mahsulot",
+    "delivery-duration": "Mahsulot 24 soat ichida yetkazib beriladi",
+    "delete-product": "yo'q qilish",
+    "your-order": "Buyurtmangiz",
+    "products": "Mahsulotlar",
+    "usd": "so'm",
+    "delivery": "Yetkazib berish 24 soat ichida",
+    "discount": "Tejovingiz",
+    "order-click": "Rasmiylashtirishga o'tish",
+    "all": "Jami"
+  },
+  "tariff": {
+    "title": "Tariflarimiz",
+    "month": "oylik tarif",
+    "usd": "so'm",
+    "buy-tariff": "Boshlash"
+  },
+  "product-info": {
+    "sold": "ta buyurtma",
+    "shop": "Sotuvchi",
+    "shop-user": "Fruteacorp",
+    "count": "Miqdor",
+    "buy": "Sotuvda",
+    "have-buy": "dona bor",
+    "dont-buy": "Sotuvda mavjud emas",
+    "price": "Narx",
+    "usd": "so'm",
+    "add-basket": "Savatga qo'shish",
+    "short-info": "Maxsulot haqida qisqacha:",
+    "product-info": "Mahsulot tavsifi",
+    "comment": "Sharhlar",
+    "comments": "Hamma sharhlar",
+    "com": "sharh",
+    "content": "Izoh",
+    "no-comment": "Sharhlar mavjud emas",
+    "show-more": "Yana ko'rsatish",
+    "no-show": "Yashirish",
+    "see-more": "Ko'proq ko'rish",
+    "see-hidden": "Yopish"
+  },
+  "user": {
+    "my-info": "Ma'lumotlarim",
+    "my-order": "Buyurtmalarim",
+    "all-order": "Barcha Buyurtmalar",
+    "lastName": "Familiya",
+    "firstName": "Ism",
+    "phone": "Telefon raqami",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "logout": "Tizimdan chiqish",
+    "loading": "Yuklanmoqda ..."
+  },
+  "filter": {
+    "title": "Turkumlar",
+    "input": "Turkum tanlang"
+  },
+  "orders": {
+    "dont-any": "Hech narsa yo'q",
+    "dont-any-1": "Sizda buyurtmalar yo'q! Barcha kerakli narsalarni topish uchun qidirishdan foydalaning!",
+    "start-buy": "Xaridlarni boshlash",
+    "back-home": "Bosh sahifaga qaytish",
+    "order-id": "Buyurtma ID raqami",
+    "status": "Holat",
+    "address": "Yetkazib berish manzili",
+    "product": {
+      "title": "mahsulot",
+      "name": "Nomi",
+      "count": "Soni",
+      "amount": "Narxi",
+      "commit-send": "Sharh qoldirish"
+    }
+  },
+  "commit-modal": {
+    "title": "Sharhim",
+    "question": "Tovar yoqdimi?",
+    "area-label": "Sharhingiz:",
+    "placeholder": "Sharhingizni kiriting...",
+    "error": "Iltimos, reyting tanlang.",
+    "btn": "Yuborish"
+  },
+  "card-modal": {
+    "message": "Savatga mahsulot qo'shildi",
+    "to-basket": "savatga o'tish"
+  },
+  "auth": {
+    "required": "Maydonni to'ldiring",
+    "patternPhone": "9 ta raqam kiriting"
+  },
+  "login": {
+    "phone": "Tel",
+    "password": "Parolni kiriting",
+    "send": "Kirish",
+    "registration": "Ro'yxatdan o'tish",
+    "forgot-password": "Parolni unutdingizmi?"
+  },
+  "sms": {
+    "title": "SMS kodini kiriting",
+    "btn": "Tasdiqlash",
+    "repBtn": "Qayta yuborish"
+  },
+  "register": {
+    "firstName": "Ismingizni kiriting",
+    "lastName": "Familiyangizni kiriting",
+    "phone": "Tel",
+    "password": "Parolni kiriting",
+    "send": "Yuborish",
+    "open": "Kirish"
+  },
+  "newPass": {
+    "newPass": "Yangi parolni kiriting",
+    "repNewPass": "Yangi parolni takrorlang",
+    "minLeng": "Kamida 6 ta belgi bo'lishi kerak",
+    "repPass": "Parollar mos kelmadi",
+    "pattern": "Kamida 1 ta raqam va 1 ta harf kiriting"
+  },
+  "checkout": {
+    "title": "Buyurtmani rasmiylashtirish",
+    "order-user": "Buyurtma qabul qiluvchi:",
+    "lastName": "Familiya",
+    "firstName": "Ism",
+    "delivery-info": "Siz koʻrsatgan telefon raqamiga buyurtma holati haqida bildirishnoma yuboramiz. Yetkazib berish vaqtini aniqlashtirish uchun kuryer siz bilan telefon orqali bogʻlanadi.",
+    "phone": "Telefon raqami",
+    "address": "Yetkazib berish manzili",
+    "choose-address": "Topshirish manzilini tanlang",
+    "edit": "O'zgatirish",
+    "choose": "Tanlash",
+    "delivery-duration": "24 soat ichida yetkazamiz",
+    "buy": "Sotuvchi",
+    "buy-user": "Fruteacorp",
+    "count": "Miqdor",
+    "pcs": "dona",
+    "usd": "so'm",
+    "payment-type": "To'lov turi",
+    "payme": "Payme orqali",
+    "your-order": "Buyurtmangiz",
+    "change-basket": "Savatga o'tish",
+    "products": "Mahsulotlar",
+    "delivery": "Yetkazib berish",
+    "free": "bepul",
+    "all": "Jami",
+    "promocode": "Promokod bormi",
+    "promo-input": "Promokodni kiriting",
+    "order-btn": "Buyurtmani rasmiylashtirish",
+    "bts": "Yetkazib berish Toshkent shahridan tashqaridagi viloyatlar uchun pochta xizmati BTS orqali amalga oshiriladi. Bu xizmat tezkor va ishonchli yetkazib berishni ta'minlaydi. Savollaringiz bo‘lsa yoki qo‘shimcha ma’lumot kerak bo‘lsa, biz bilan bog‘laning!"
+  },
+  "map": {
+    "delivering": "Bu yerga olib kelish",
+    "title": "Buyurtmani qayerga yetkazish kerak?",
+    "choose-map": "Xaritadan yetkazib berish manzilini tanlang",
+    "streetName": "Shahar, ko'cha, uy",
+    "house": "Xonadon",
+    "way": "Yo'lak",
+    "floor": "Qavat",
+    "entry-code": "Domofon",
+    "delivery-info": "Kuryer uchun izoh",
+    "delivery-comment": "Kuryerga yordam beradigan har qanday maʻlumot. Masalan, «dorixona roʻparasida, qahvaxona yonida»",
+    "choose-area": "Hududni tanlang"
+  },
+  "order-delivery": {
+    "created": "Buyurtma yaratildi",
+    "delivered": "Xaridorga berilgan",
+    "on-way": "Buyurtma yetkazilyapti",
+    "paid": "Buyurtma yig'ilyapti",
+    "cancelled": "Buyurtma qaytarildi"
+  },
+  "about": {
+    "title": "Kompaniya haqida",
+    "section1": {
+      "title": "FRUTEACORP",
+      "line1": "FRUTEACORP — 2019 yilda tashkil etilgan oilaviy korxona bo‘lib, choy ichish an’analarini qayta yangilash va O‘zbekiston xalqini noyob ta’mlar bilan tanishtirishni maqsad qilgan. Biz choy san’atini har bir xonadonga olib kirishga intilamiz va dunyoning eng yaxshi ingredientlaridan tayyorlangan, mualliflik retseptlari asosida yaratilgan tabiiy mevali va rezavorli kupajlarni taklif etamiz.",
+      "line2": "Mahsulotlarimiz yuqori sifat, tabiiylik va an’analarga hurmatning tanlovidir. Bizningcha, choy shunchaki ichimlik emas. Bu — ta’m uyg‘unligi, insonlar va ularning sog‘lig‘iga g‘amxo‘rlik hamda ilhom manbai. Shu sababli bizning shiorimiz: «FRUTEACORP — sifat va tabiiylik tanlovi”."
+    },
+    "section2": {
+      "title": "Mahsulotlarimiz",
+      "line1": "FRUTEACORP har xil ta’m va ehtiyojlarni hisobga olgan holda choy mahsulotlarining keng tanlovini taklif etadi. Bizning portfelimizga tarqoq kupajlar, qoplamali choylar va xususiy tijorat belgisi (XTB) ostidagi mahsulotlar kiradi. Biz chakana xaridorlar va korporativ mijozlar bilan ishlaymiz, har bir buyurtmaga alohida yondashuvni ta’minlaymiz. Shuningdek, HoReCa segmenti bilan faol hamkorlik qilamiz va ushbu bozorning o‘ziga xos talablariga javob beradigan yechimlarni taklif etamiz.",
+      "line2": "Unikal retseptlar, puxta o‘ylangan qoplamalar va mayda detallarga e’tibor FRUTEACORP mahsulotlarini har kungi iste’mol uchun ham, maxsus tadbirlar uchun ham ajoyib tanlovga aylantiradi. Bizning maqsadimiz — har bir choy piyolasidan xursandchilik, ilhom va rohat olishingizga yordam berish, boy ta’mlar va xushbo‘ylik olamini kashf etishingizdir."
+    },
+    "section3": {
+      "title": "Sifat va noyoblik",
+      "line1": "Bizning choylarimiz sifati va tabiiyligiga alohida e’tibor qaratamiz. Kupajlar uchun barcha ingredientlar dunyoning turli burchaklaridan import qilinib, qattiq nazoratdan o‘tadi. Unikal retseptlar va ta’mlar uyg‘unligi bizning mahsulotlarimizni haqiqiy eksklyuzivga aylantiradi — bunday choylarni boshqa yerda uchratmaysiz.",
+      "line2": "FRUTEACORP choylari yuqori sifat va originalikni qadrlaydiganlar uchun mo‘ljallangan. Ular oilaviy choy ichishlar uchun ham, nafis sovg‘a sifatida ham juda mos keladi. Bizning mahsulotlarimiz gurmanlar, korporativ mijozlar va HoReCa segmentidagi hamkorlar orasida juda mashhur."
+    },
+    "section4": {
+      "title": "Yutuqlarimiz va rejalarimiz",
+      "line1": "Biz O‘zbekistonning eng yirik savdo tarmoqlari doimiy mijozlarimiz ekanligidan faxrlanamiz. Shuningdek, mahsulotlarimizni yaqin va uzoq mamlakatlarga eksport qilishni faol rivojlantirmoqdamiz va xalqaro bozorda o‘z ishtirokimizni muvaffaqiyatli kengaytirmoqdamiz.",
+      "line2": "FRUTEABAR brendi bilan biz sizga faqat choy emas, balki boy ta’mlardan bahramand bo‘lish va choy estetikasi atmosferasiga sho‘ng‘ish imkonini taqdim etishni maqsad qilganmiz.",
+      "line3": "FRUTEABAR: Ta'mlarning boyligidan bahramand bo‘ling."
+    }
+  },
+  "not-found": {
+    "not-found-page": "Sahifa topilmadi!",
+    "text": "Siz qidirayotgan sahifa mavjud emas yoki olib tashlangan.",
+    "btn": "Bosh sahifaga qaytish"
+  },
+  "message": {
+    "login": {
+      "success": "Muvaffaqiyatli kirildi",
+      "error": "Xatolik yuz berdi"
+    },
+    "newPass": {
+      "success": "Parol muvaffaqiyatli almashtirildi!"
+    },
+    "register": {
+      "success": "Muvaffaqiyatli qo'shildi",
+      "error": "Ro'yhatdan o'tishda xatolik"
+    },
+    "product-card": {
+      "product-have-in-cart": "Bu mahsulot savatda bor",
+      "product-dont-have": "Mahsulot sotuvda mavjud emas yoki sotib bo'lindi!",
+      "add-like": "Mahsulotni sevimlilarga qo'shish uchun tizimga kiring"
+    },
+    "settings-form": {
+      "success": "Muvaffaqiyatli o'zgartirildi",
+      "error": "Xatolik yuz berdi"
+    },
+    "promo": {
+      "success": "Promokod muvaffaqiyatli qo'llanildi"
+    },
+    "address": {
+      "error": "Yetkazib berish manzilini tanlang"
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "header": {
+    "discount": "Get up to 17% discount when shopping on our website",
+    "now-buy": "Buy Now",
+    "delivery": "FREE delivery across Tashkent city",
+    "category": "Catalog",
+    "input-placeholder": "Search products",
+    "like": "Favorites",
+    "basket": "Cart",
+    "home": "Home",
+    "user": "Account",
+    "search-modal": "Recommended",
+    "no-data": "No products found"
+  },
+  "home": {
+    "products": "Products",
+    "popular": "Popular",
+    "other": "Other Products"
+  },
+  "product-card": {
+    "usd": "UZS",
+    "comment": "reviews"
+  },
+  "footer": {
+    "about": "About the Company",
+    "contact": "Contact Us",
+    "faq": "FAQ",
+    "secret": "Privacy Policy",
+    "use": "User Agreement",
+    "fruteacorp": "«2024© LLC «FRUTEACORP». All rights reserved»",
+    "modal": {
+      "title": "Contact Us",
+      "text": "Ask our specialists in the way most convenient for you:",
+      "telegram": "Telegram",
+      "call": "Call within Uzbekistan"
+    }
+  },
+  "faq": {
+    "title": "Questions and Answers"
+  },
+  "wishes": {
+    "title": "My Wishlist",
+    "choose-like": "Add what you like",
+    "click-like": "Click the ♡ icon on a product. Log in to your account, and all favorites will be saved.",
+    "login-user": "Log in"
+  },
+  "basket": {
+    "no-data": "Your cart is empty",
+    "add-product": "Start with collections on the homepage or find the desired product using search",
+    "home": "Home",
+    "title": "Your Cart",
+    "product": "product",
+    "delivery-duration": "The product will be delivered within 24 hours.",
+    "delete-product": "delete",
+    "your-order": "Your Order",
+    "products": "Products",
+    "usd": "UZS",
+    "delivery": "Delivery within 24 hours.",
+    "discount": "Your Savings",
+    "order-click": "Proceed to Checkout",
+    "all": "Total"
+  },
+  "tariff": {
+    "title": "Our Tariffs",
+    "month": "monthly tariff",
+    "usd": "UZS",
+    "buy-tariff": "Start"
+  },
+  "product-info": {
+    "sold": "orders",
+    "shop": "Seller",
+    "shop-user": "Fruteacorp",
+    "count": "Quantity",
+    "buy": "Available",
+    "have-buy": "units in stock",
+    "dont-buy": "Out of stock",
+    "price": "Price",
+    "usd": "UZS",
+    "add-basket": "Add to Cart",
+    "short-info": "Quick Overview:",
+    "product-info": "Product Description",
+    "comment": "Reviews",
+    "comments": "All Reviews",
+    "com": "review",
+    "content": "Comment",
+    "no-comment": "No reviews available",
+    "show-more": "Show More",
+    "no-show": "Hide",
+    "see-more": "View More",
+    "see-hidden": "Close"
+  },
+  "user": {
+    "my-info": "My Information",
+    "my-order": "My Orders",
+    "all-order": "All Orders",
+    "lastName": "Last Name",
+    "firstName": "First Name",
+    "phone": "Phone Number",
+    "save": "Save",
+    "cancel": "Cancel",
+    "logout": "Logout",
+    "loading": "Loading..."
+  },
+  "filter": {
+    "title": "Categories",
+    "input": "Select a category"
+  },
+  "orders": {
+    "dont-any": "Nothing here",
+    "dont-any-1": "You have no orders! Use the search to find all you need!",
+    "start-buy": "Start Shopping",
+    "back-home": "Return to Homepage",
+    "order-id": "Order ID",
+    "status": "Status",
+    "address": "Delivery Address",
+    "product": {
+      "title": "product",
+      "name": "Name",
+      "count": "Quantity",
+      "amount": "Price",
+      "commit-send": "Leave a Review"
+    }
+  },
+  "commit-modal": {
+    "title": "My Review",
+    "question": "Did you like the product?",
+    "area-label": "Your review:",
+    "placeholder": "Enter your review...",
+    "error": "Please select a rating.",
+    "btn": "Submit"
+  },
+  "card-modal": {
+    "message": "Product added to the cart",
+    "to-basket": "Go to cart"
+  },
+  "auth": {
+    "required": "Please fill in the field",
+    "patternPhone": "Enter 9 digits"
+  },
+  "login": {
+    "phone": "Phone",
+    "password": "Enter password",
+    "send": "Login",
+    "registration": "Register",
+    "forgot-password": "Forgot password?"
+  },
+  "sms": {
+    "title": "Enter the SMS code",
+    "btn": "Confirm",
+    "repBtn": "Resend"
+  },
+  "register": {
+    "firstName": "Enter your first name",
+    "lastName": "Enter your last name",
+    "phone": "Phone",
+    "password": "Enter password",
+    "send": "Submit",
+    "open": "Login"
+  },
+  "newPass": {
+    "newPass": "Enter new password",
+    "repNewPass": "Repeat new password",
+    "minLeng": "Must be at least 6 characters",
+    "repPass": "Passwords do not match",
+    "pattern": "Enter at least 1 number and 1 letter"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "order-user": "Order recipient:",
+    "lastName": "Last Name",
+    "firstName": "First Name",
+    "delivery-info": "We will send order updates to your provided phone number. The courier will contact you to confirm the delivery time.",
+    "phone": "Phone number",
+    "address": "Delivery address",
+    "choose-address": "Select delivery address",
+    "edit": "Edit",
+    "choose": "Select",
+    "delivery-duration": "We deliver within 24 hours.",
+    "buy": "Seller",
+    "buy-user": "Fruteacorp",
+    "count": "Quantity",
+    "pcs": "pcs",
+    "usd": "UZS",
+    "payment-type": "Payment type",
+    "payme": "Via Payme",
+    "your-order": "Your order",
+    "change-basket": "Go to cart",
+    "products": "Products",
+    "delivery": "Delivery",
+    "free": "free",
+    "all": "Total",
+    "promocode": "Have a promo code?",
+    "promo-input": "Enter promo code",
+    "order-btn": "Place Order",
+    "bts": "Delivery to regions outside Tashkent city is carried out via postal service BTS. This service ensures fast and reliable delivery. If you have any questions or need additional information, feel free to contact us!"
+  },
+  "map": {
+    "delivering": "Deliver here",
+    "title": "Where should we deliver your order?",
+    "choose-map": "Select the delivery address on the map",
+    "streetName": "City, street, house",
+    "house": "Apartment",
+    "way": "Entrance",
+    "floor": "Floor",
+    "entry-code": "Intercom",
+    "delivery-info": "Comment for the courier",
+    "delivery-comment": "Any information that can help the courier, e.g., 'opposite the pharmacy, near the coffee shop'",
+    "choose-area": "Select area"
+  },
+  "order-delivery": {
+    "created": "Order created",
+    "delivered": "Delivered to the customer",
+    "on-way": "Order is being delivered",
+    "paid": "Order is being prepared",
+    "cancelled": "Order canceled"
+  },
+  "about": {
+    "title": "About the company",
+    "section1": {
+      "title": "FRUTEACORP",
+      "line1": "FRUTEACORP is a family-owned business established in 2019 with a mission to redefine tea traditions and offer the people of Uzbekistan a selection of unique flavors. We aim to bring the art of tea into every home by introducing all-natural fruit and berry blends crafted from original recipes using the finest ingredients sourced from around the globe.",
+      "line2": "Our products are a choice for high quality, natural ingredients, and respect for traditions. We believe that tea is more than just a beverage. It is a harmony of taste, care for people and their health, and a source of inspiration. That is why our slogan is “FRUTEACORP — your choice of natural and quality”."
+    },
+    "section2": {
+      "title": "Our Product Line",
+      "line1": "FRUTEACORP offers a wide range of tea products tailored to various preferences and needs. Our portfolio includes loose tea blends, tea bags, and private-label (PL) products. We cater to both retail and corporate clients, taking a personalized approach to every order. Additionally, we actively collaborate with the HoReCa sector, providing solutions that meet the specific requirements of this market.",
+      "line2": "Unique recipes, thoughtful packaging, and meticulous attention to detail make our products the perfect choice for everyday use as well as special occasions. With every cup of tea from FRUTEACORP, we strive to deliver joy, inspiration, and comfort while opening up a world of rich flavors and aromas."
+    },
+    "section3": {
+      "title": "Quality and Exclusivity",
+      "line1": "We place great emphasis on the quality and natural origins of our teas. All ingredients for our blends are imported from various corners of the world and undergo rigorous quality control. The unique recipes and flavor combinations make our teas truly exclusive — you won’t find anything like them elsewhere.",
+      "line2": "FRUTEACORP teas are designed for those who value high quality and originality. They are ideal for family tea times, as a sophisticated gift, or as a special treat. Our products are especially appreciated by gourmets, corporate clients, and partners in the HoReCa segment."
+    },
+    "section4": {
+      "title": "Our Achievements and Plans",
+      "line1": "We are proud to count the largest retail chains in Uzbekistan among our loyal customers. We are also actively developing our export operations, supplying our products to both neighboring and distant countries, and steadily expanding our presence in global markets.",
+      "line2": "With the FRUTEABAR brand, we aim to offer not just tea but an opportunity to enjoy a wealth of flavors while immersing yourself in the natural essence and aesthetics of tea.",
+      "line3": "FRUTEABAR: Enjoy the variety of flavors."
+    }
+  },
+  "not-found": {
+    "not-found-page": "Page not found!",
+    "text": "The page you are looking for does not exist or has been removed.",
+    "btn": "Return to Homepage"
+  },
+  "message": {
+    "login": {
+      "success": "Successfully logged in",
+      "error": "An error occurred"
+    },
+    "newPass": {
+      "success": "Password changed successfully!"
+    },
+    "register": {
+      "success": "Successfully registered",
+      "error": "Error during registration"
+    },
+    "product-card": {
+      "product-have-in-cart": "This product is already in the cart",
+      "product-dont-have": "Product is out of stock or unavailable!",
+      "add-like": "Log in to add products to favorites"
+    },
+    "settings-form": {
+      "success": "Successfully updated",
+      "error": "An error occurred"
+    },
+    "promo": {
+      "success": "Promo code successfully applied"
+    },
+    "address": {
+      "error": "Please select a delivery address"
+    }
+  }
+}
