@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useStore } from './src/store/store';
 // const REACT_APP_BASE_URL = "http://213.232.225.73:9000";
-const REACT_APP_BASE_URL = "http://170.64.234.64:6262";
+const REACT_APP_BASE_URL = "https://api.fruteacorp.uz";
 
 
 const api = axios.create({
