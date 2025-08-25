@@ -123,7 +123,7 @@ function ProductCard({ product, loading }) {
             />
           )}
           <img
-            src={`http://170.64.234.64:6262/images/${images[0]?.image?.name}`}
+            src={`https://api.fruteacorp.uz/images/${images[0]?.image?.name}`}
             alt={
               i18n.language === "uz"
                 ? title_uz

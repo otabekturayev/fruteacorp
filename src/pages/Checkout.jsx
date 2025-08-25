@@ -270,7 +270,7 @@ const Checkout = () => {
                         <Skeleton className="rounded-md sm:h-[80px] sm:w-[80px] w-[52px] h-[52px]" />
                       )}
                       <img
-                        src={`http://170.64.234.64:6262/images/${product?.Product?.images[0]?.image?.name}`}
+                        src={`https://api.fruteacorp.uz/images/${product?.Product?.images[0]?.image?.name}`}
                         alt="product photo"
                         className={`h-full ${imageLoaded ? "block" : "hidden"}`}
                         onLoad={handleImageLoad}

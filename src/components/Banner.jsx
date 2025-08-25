@@ -47,7 +47,7 @@ function Banner() {
                 className="h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px] overflow-hidden block"
               >
                 <img
-                  src={`http://170.64.234.64:6262/images/${item?.image}`}
+                  src={`https://api.fruteacorp.uz/images/${item?.image}`}
                   alt={item?.title}
                   className="w-full object-cover h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px]"
                 />

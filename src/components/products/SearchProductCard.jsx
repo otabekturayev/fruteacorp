@@ -19,7 +19,7 @@ const SearchProductCard = ({
       <div className="min-w-[60px] min-h-[80px]">
         <img
           className="w-[60px] h-[80px] rounded-[5px]"
-          src={`http://170.64.234.64:6262/images/${img}`}
+          src={`https://api.fruteacorp.uz/images/${img}`}
           alt={title}
         />
       </div>

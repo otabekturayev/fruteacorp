@@ -36,7 +36,7 @@ const AboutUsCard = () => {
           <div className="w-full h-auto overflow-hidden rounded-[20px]">
             {data?.length > 0 ? (
               <img
-                src={`http://170.64.234.64:6262/images/${randomImage?.image}`}
+                src={`https://api.fruteacorp.uz/images/${randomImage?.image}`}
                 alt="about us page"
                 className="rounded-[20px] object-cover duration-[0.2s] hover:scale-[1.01] w-full h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px]"
               />

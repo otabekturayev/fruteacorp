@@ -35,7 +35,7 @@ const ProductInfoSwiper = ({ images }) => {
             >
               <img
                 className="object-contain w-full h-full xl:w-[500px] xl:h-[500px] select-none"
-                src={`http://170.64.234.64:6262/images/${item?.image?.name}`}
+                src={`https://api.fruteacorp.uz/images/${item?.image?.name}`}
                 alt={`Product image ${index + 1}`} 
               />
             </SwiperSlide>
@@ -79,7 +79,7 @@ const ProductInfoSwiper = ({ images }) => {
             >
               <img
                 className="object-contain xl:w-[84px] xl:h-[112px] w-[60px] h-[80px] select-none cursor-pointer"
-                src={`http://170.64.234.64:6262/images/${item?.image?.name}`}
+                src={`https://api.fruteacorp.uz/images/${item?.image?.name}`}
                 alt={`Thumbnail image ${index + 1}`} 
               />
             </SwiperSlide>

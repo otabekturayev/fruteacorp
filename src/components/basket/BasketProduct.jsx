@@ -96,7 +96,7 @@ const BasketProduct = ({ data }) => {
                           />
                         )}
                         <img
-                          src={`http://170.64.234.64:6262/images/${elem?.Product?.images[0]?.image?.name}`}
+                          src={`https://api.fruteacorp.uz/images/${elem?.Product?.images[0]?.image?.name}`}
                           alt="product img"
                           className={`rounded-md w-full h-full object-contain ${
                             imageLoaded ? "block" : "hidden"
