@@ -11,17 +11,21 @@ import { FaLocationArrow } from "react-icons/fa6";
 import AreaSelect from "./AreaSelect";
 import { useFetch } from "../../hooks/useFetch";
 
-
-
-const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) => {
-  const {data} = useFetch("/areas")
+const ModalMap = ({
+  setIsOpenMap,
+  setAddressData,
+  isOpenMap,
+  area,
+  setArea,
+}) => {
+  const { data } = useFetch("/areas");
   const mapRef = useRef(null);
-  const { register, handleSubmit, setValue} = useForm();
+  const { register, handleSubmit, setValue } = useForm();
   const [coordinates, setCoordinates] = useState([41.2995, 69.2401]);
   const [address, setAddress] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [cor, setCor] = useState([]);
-  const [isError, setIsError] = useState(false)
+  const [isError, setIsError] = useState(false);
   // const [input, setInput] = useState(null)
 
   const { t, i18n } = useTranslation();
@@ -34,28 +38,52 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
     setCor(centerCoords);
   };
 
+  const key = "pk.03030d058b71acfe0fc91cafd1563245"
+
+  // const fetchAddress = async (latitude, longitude) => {
+  //   try {
+  //     const response = await axios.get(
+  //       `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
+  //       {
+  //         headers: {
+  //           "accept-language": "uz",
+  //           "User-Agent": "Fruteacorp (https://fruteacorp.com)"
+  //         },
+  //       }
+  //     );
+
+  //     const data = response.data;
+  //     if (data?.display_name) {
+  //       setAddress(data?.display_name);
+  //       setValue("address", data?.display_name);
+  //     } else {
+  //       console.log("No address found for the given coordinates.");
+  //     }
+  //   } catch (error) {
+  //     console.error("Geokoding xatosi:", error);
+  //   }
+  // };
   const fetchAddress = async (latitude, longitude) => {
-      try {
-        const response = await axios.get(
-          `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
-          {
-            headers: {
-              "accept-language": "uz"
-            }
-          }
-        );
-      
-        const data = response.data;
-        if (data?.display_name) {
-              setAddress(data?.display_name); 
-              setValue("address", data?.display_name); 
-            } else {
-              console.log("No address found for the given coordinates.");
-            }
-      } catch (error) {
-        console.error("Geokoding xatosi:", error);
+    try {
+      const response = await axios.get(
+        `https://us1.locationiq.com/v1/reverse?key=${key}&lat=${latitude}&lon=${longitude}&format=json`,
+        {
+          headers: {
+            "accept-language": "uz", // 🔄 tilni uzbek qilib yuborish mumkin
+          },
+        }
+      );
+      const data = response.data;
+      if (data?.display_name) {
+        setAddress(data.display_name); // ✅ manzil inputga tushadi
+        setValue("address", data.display_name); // ✅ formga yoziladi
+      } else {
+        console.log("No address found for the given coordinates.");
       }
-    
+    } catch (error) {
+      console.error("Geokoding xatosi:", error);
+      toast.error("Manzilni olishda xatolik yuz berdi.");
+    }
   };
 
   // const fetchLocationByAddress = async (address) => {
@@ -67,7 +95,7 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
   //         }
   //       }
   //     );
-  
+
   //     console.log(response.data);
   //   } catch (error) {
   //     console.error("Manzil qidirishda xato:", error);
@@ -81,23 +109,22 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
   //    }
   // }, [input])
 
-
   const onSubmit = (data) => {
-    if(area){
+    if (area) {
       setAddressData({ ...data, lat: cor?.[0], long: cor?.[1] });
       setIsOpenMap(false);
       setModalOpen(false);
       setAddress("");
-    }else{
-      setIsError(true)
+    } else {
+      setIsError(true);
     }
   };
 
   useEffect(() => {
-    if(area){
-      setIsError(false)
+    if (area) {
+      setIsError(false);
     }
-  }, [area])
+  }, [area]);
 
   function isOpenModal() {
     if (address) {
@@ -105,24 +132,22 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
     }
   }
 
-
   const getUserLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
           const userCoordinates = [latitude, longitude];
-          setCoordinates(userCoordinates); 
-          setCor(userCoordinates); 
+          setCoordinates(userCoordinates);
+          setCor(userCoordinates);
           fetchAddress(latitude, longitude);
           if (mapRef.current) {
             mapRef.current.panTo(userCoordinates, {
               delay: 3000,
             });
             setTimeout(() => {
-              mapRef.current.setZoom(20); 
-            }, 1000); 
-            
+              mapRef.current.setZoom(20);
+            }, 1000);
           }
         },
         (error) => {
@@ -150,8 +175,15 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
           className="w-full px-[10px] py-[5px] rounded-[10px] bg-custom-green-400 focus:outline-none"
           type="text"
           value={address}
-          placeholder="Shahar, ko'cha, uy"
-          readOnly
+          placeholder={t("map.street-placeholder")}
+          readOnly={!address} // ✅ faqat address bo‘lsa edit qilishga ruxsat
+                onChange={(e) => {
+                  if (address) {
+                    // ✅ address mavjud bo‘lsa o‘zgartirish mumkin
+                    setAddress(e.target.value);
+                    setValue("address", e.target.value);
+                  }
+                }}
         />
         <button
           onClick={isOpenModal}
@@ -190,8 +222,14 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* <input className="p-[10px] block w-full border  border-custom-green-400 rounded-[10px] focus:outline-none" type="text" onChange={(e) => setInput(e.target.value)}/> */}
           <div className="mb-[10px]">
-              <span className="text-[12px]">{t("map.choose-area")} *</span>
-              <AreaSelect isOpenMap={isOpenMap} isError={isError}  options={data} onSelect={setArea} placeholder={t("map.choose-area")}/>
+            <span className="text-[12px]">{t("map.choose-area")} *</span>
+            <AreaSelect
+              isOpenMap={isOpenMap}
+              isError={isError}
+              options={data}
+              onSelect={setArea}
+              placeholder={t("map.choose-area")}
+            />
           </div>
           <div className="mb-[10px]">
             <label>
@@ -200,9 +238,18 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
                 type="text"
                 {...register("address", { required: true })}
                 className="p-[10px] block w-full border border-custom-green-400 rounded-[10px] focus:outline-none"
-                placeholder={t("map.streetName")}
+                placeholder={t("map.street-placeholder")}
                 value={address}
-                readOnly
+                readOnly={!address} // ✅ faqat address bo‘lsa edit qilishga ruxsat
+                onChange={(e) => {
+                  if (address) {
+                    // ✅ address mavjud bo‘lsa o‘zgartirish mumkin
+                    setAddress(e.target.value);
+                    setValue("address", e.target.value);
+                  }
+                }}
+
+                // readOnly
               />
             </label>
           </div>
@@ -269,7 +316,16 @@ const ModalMap = ({ setIsOpenMap, setAddressData, isOpenMap, area, setArea }) =>
         </form>
       </div>
       <div className="w-full h-screen">
-        <YMaps query={{ lang: i18n.language === "uz" ? "uz_UZ" : i18n.language === "ru" ? "ru_RU" : "en_US" }}>
+        <YMaps
+          query={{
+            lang:
+              i18n.language === "uz"
+                ? "uz_UZ"
+                : i18n.language === "ru"
+                ? "ru_RU"
+                : "en_US",
+          }}
+        >
           <div className="relative w-full h-full">
             <Map
               instanceRef={(ref) => (mapRef.current = ref)}

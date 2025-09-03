@@ -57,7 +57,7 @@
     "usd": "UZS",
     "delivery": "Delivery within 24 hours.",
     "discount": "Your Savings",
-    "order-click": "Proceed to Checkout",
+    "order-click": "Place order",
     "all": "Total"
   },
   "tariff": {
@@ -169,7 +169,7 @@
     "order-user": "Order recipient:",
     "lastName": "Last Name",
     "firstName": "First Name",
-    "delivery-info": "We will send order updates to your provided phone number. The courier will contact you to confirm the delivery time.",
+    "delivery-info": "The operator will contact you by phone to confirm the delivery time.",
     "phone": "Phone number",
     "address": "Delivery address",
     "choose-address": "Select delivery address",
@@ -191,14 +191,17 @@
     "all": "Total",
     "promocode": "Have a promo code?",
     "promo-input": "Enter promo code",
-    "order-btn": "Place Order",
-    "bts": "Delivery to regions outside Tashkent city is carried out via postal service BTS. This service ensures fast and reliable delivery. If you have any questions or need additional information, feel free to contact us!"
+    "order-btn": "Pay",
+    "bts": "Delivery within the city of Tashkent is carried out via Yandex Go and is paid for separately.",
+    "bts-1": "Delivery to regions outside of Tashkent is carried out via the BTS postal service and is paid for separately.",
+    "bts-2": "If you have any questions or need additional information, feel free to contact us."
   },
   "map": {
     "delivering": "Deliver here",
     "title": "Where should we deliver your order?",
     "choose-map": "Select the delivery address on the map",
     "streetName": "City, street, house",
+    "street-placeholder": "Select a location on the map",
     "house": "Apartment",
     "way": "Entrance",
     "floor": "Floor",

@@ -216,7 +216,9 @@ const Checkout = () => {
                 </div>
               </div>
               <p className="max-w-[550px] text-[14px] text-red-500 mb-[15px]">
-                {t("checkout.bts")}{" "}
+                <span className="block">*{t("checkout.bts")}</span>
+                <span className="block">*{t("checkout.bts-1")}</span>
+                <span className="block">*{t("checkout.bts-2")}</span>
                <div className="flex gap-2 mt-1"> <a target="_blank" href="https://t.me/fruteacorp">
                   <img src={tg} className="w-8 h-8" />
                 </a>{" "}

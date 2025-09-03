@@ -57,7 +57,7 @@
     "usd": "so'm",
     "delivery": "Yetkazib berish 24 soat ichida",
     "discount": "Tejovingiz",
-    "order-click": "Rasmiylashtirishga o'tish",
+    "order-click": "Buyurtma berish",
     "all": "Jami"
   },
   "tariff": {
@@ -169,7 +169,7 @@
     "order-user": "Buyurtma qabul qiluvchi:",
     "lastName": "Familiya",
     "firstName": "Ism",
-    "delivery-info": "Siz koʻrsatgan telefon raqamiga buyurtma holati haqida bildirishnoma yuboramiz. Yetkazib berish vaqtini aniqlashtirish uchun kuryer siz bilan telefon orqali bogʻlanadi.",
+    "delivery-info": "Operator siz bilan yetkazib berish vaqtini aniqlashtirish uchun telefon orqali bog‘lanadi.",
     "phone": "Telefon raqami",
     "address": "Yetkazib berish manzili",
     "choose-address": "Topshirish manzilini tanlang",
@@ -191,14 +191,17 @@
     "all": "Jami",
     "promocode": "Promokod bormi",
     "promo-input": "Promokodni kiriting",
-    "order-btn": "Buyurtmani rasmiylashtirish",
-    "bts": "Yetkazib berish Toshkent shahridan tashqaridagi viloyatlar uchun pochta xizmati BTS orqali amalga oshiriladi. Bu xizmat tezkor va ishonchli yetkazib berishni ta'minlaydi. Savollaringiz bo‘lsa yoki qo‘shimcha ma’lumot kerak bo‘lsa, biz bilan bog‘laning!"
+    "order-btn": "To‘lash",
+    "bts": "Toshkent shahri bo‘yicha yetkazib berish Yandex Go xizmati orqali amalga oshiriladi va alohida to‘lanadi.",
+    "bts-1": "Toshkent shahridan tashqaridagi hududlarga yetkazib berish BTS pochta xizmati orqali amalga oshiriladi va alohida to‘lanadi.",
+    "bts-2": "Agar sizda savollar bo‘lsa yoki qo‘shimcha ma'lumot kerak bo‘lsa, biz bilan bog‘lanishingiz mumkin."
   },
   "map": {
     "delivering": "Bu yerga olib kelish",
     "title": "Buyurtmani qayerga yetkazish kerak?",
     "choose-map": "Xaritadan yetkazib berish manzilini tanlang",
     "streetName": "Shahar, ko'cha, uy",
+    "street-placeholder": "Manzilni xaritadan tanlang!",
     "house": "Xonadon",
     "way": "Yo'lak",
     "floor": "Qavat",
