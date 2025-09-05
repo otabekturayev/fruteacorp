@@ -446,6 +446,11 @@ const Checkout = () => {
                   onChange={(e) =>
                     setPromo(e.target.value.trim().toUpperCase())
                   }
+                  onFocus={(e) => {
+                    setTimeout(() => {
+                      e.target.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 300); // keyboard chiqishini kutish uchun
+                  }}
                   placeholder={t("checkout.promo-input")}
                   className={`w-full focus:outline-none mb-[3px] py-[8px] px-[10px] text-[14px] placeholder:uppercase border border-custom-green-600 rounded-[10px] mt-[15px] `}
                 />
