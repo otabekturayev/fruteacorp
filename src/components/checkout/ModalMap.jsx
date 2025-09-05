@@ -171,6 +171,7 @@ const ModalMap = ({
   return (
     <div className="w-[100%] flex h-screen relative z-[99999]">
       <div className="sm:hidden block absolute bottom-0 w-full z-[9999] p-[8px] bg-[#fff] rounded-t-[10px]">
+        
         <input
           className="w-full px-[10px] py-[5px] rounded-[10px] bg-custom-green-400 focus:outline-none"
           type="text"
@@ -183,6 +184,11 @@ const ModalMap = ({
                     setAddress(e.target.value);
                     setValue("address", e.target.value);
                   }
+                }}
+                onFocus={(e) => {
+                  setTimeout(() => {
+                    e.target.scrollIntoView({ behavior: "smooth", block: "center" });
+                  }, 300); // keyboard chiqishini kutish uchun
                 }}
         />
         <button
