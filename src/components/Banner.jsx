@@ -36,7 +36,7 @@ function Banner() {
           navigation={false}
           pagination={false}
           modules={[Navigation, Pagination, Autoplay]}
-          className="rounded-[20px] aspect-w-4 aspect-h-3 min-h-[160px] max-h-[420px]"
+          className="rounded-[20px] aspect-w-4 aspect-h-3 min-h-[160px]"
         >
           {data?.length > 0 ? data?.map((item) => (
             <SwiperSlide key={item?.id}>
@@ -44,12 +44,12 @@ function Banner() {
                 href={item?.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px] overflow-hidden block"
+                className="h-auto overflow-hidden block"
               >
                 <img
                   src={`https://api.fruteacorp.uz/images/${item?.image}`}
                   alt={item?.title}
-                  className="w-full object-cover h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px]"
+                  className="w-full object-fill h-auto min-h-[160px]"
                 />
               </a>
             </SwiperSlide>
@@ -58,12 +58,12 @@ function Banner() {
             href='#'
             target="_blank"
             rel="noopener noreferrer"
-            className="h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px] overflow-hidden block"
+            className="h-auto w-full overflow-hidden block"
           >
             <img
               src={banner}
               alt='banner'
-              className="w-full object-cover h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px]"
+              className="w-full object-fill h-auto min-h-[160px]"
             />
           </a>
         </SwiperSlide>}

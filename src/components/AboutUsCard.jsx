@@ -38,13 +38,13 @@ const AboutUsCard = () => {
               <img
                 src={`https://api.fruteacorp.uz/images/${randomImage?.image}`}
                 alt="about us page"
-                className="rounded-[20px] object-cover duration-[0.2s] hover:scale-[1.01] w-full h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px]"
+                className="rounded-[20px] duration-[0.2s] cursor-pointer hover:scale-[1.01] w-full object-fill h-auto min-h-[160px]"
               />
             ) : (
               <img
                 src={banner}
                 alt="about us page"
-                className="rounded-[20px] object-cover duration-[0.2s] hover:scale-[1.01] w-full h-[160px] ss:h-[195px] sm:h-[210px] md:h-[260px] lg:h-[350px] xl:h-[415px]"
+                className="rounded-[20px]  duration-[0.2s] cursor-pointer hover:scale-[1.01] w-full object-fill h-auto min-h-[160px]"
               />
             )}
           </div>
