@@ -36,7 +36,7 @@ function Banner() {
           navigation={false}
           pagination={false}
           modules={[Navigation, Pagination, Autoplay]}
-          className="rounded-[20px] aspect-w-4 aspect-h-3 min-h-[160px]"
+          className="rounded-[20px] aspect-w-4 aspect-h-3"
         >
           {data?.length > 0 ? data?.map((item) => (
             <SwiperSlide key={item?.id}>
