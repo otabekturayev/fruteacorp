@@ -87,7 +87,6 @@ const ProductInfoPage = () => {
       setBreadCrumbItems(newBreadcrumb);
     }
   }, [data, i18n.language]);
-  console.log(cart);
   
 
   const isInCart = () => {
@@ -96,7 +95,7 @@ const ProductInfoPage = () => {
     });
   };
 
-  console.log(isInCart);
+  // console.log(isInCart);
   
   // const addProductBasket = useCallback(() => {
   //   const token = JSON.parse(localStorage.getItem("user-store"))?.state?.user

@@ -20,7 +20,7 @@ const ProductsItem = () => {
     }
   };
 
-  console.log(loading);
+  // console.log(loading);
   
 
   return (
