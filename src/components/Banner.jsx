@@ -40,7 +40,7 @@ function Banner() {
         >
           {data?.length > 0 ? data?.map((item) => (
             <SwiperSlide key={item?.id}>
-              <a
+              {item?.link ? <a
                 href={item?.link}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,23 +49,29 @@ function Banner() {
                 <img
                   src={`https://api.fruteacorp.uz/images/${item?.image}`}
                   alt={item?.title}
-                  className="w-full object-fill h-auto min-h-[160px]"
+                  className="w-full object-fill h-auto "
                 />
-              </a>
+              </a> : <div
+                className="h-auto overflow-hidden block"
+              >
+                <img
+                  src={`https://api.fruteacorp.uz/images/${item?.image}`}
+                  alt={item?.title}
+                  className="w-full object-fill h-auto "
+                />
+              </div>}
+              
             </SwiperSlide>
           )) : <SwiperSlide >
-          <a
-            href='#'
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             className="h-auto w-full overflow-hidden block"
           >
             <img
               src={banner}
               alt='banner'
-              className="w-full object-fill h-auto min-h-[160px]"
+              className="w-full object-fill h-auto"
             />
-          </a>
+          </div>
         </SwiperSlide>}
 
           <div className="w-[95%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 lg:flex justify-between hidden">

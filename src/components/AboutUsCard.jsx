@@ -10,9 +10,8 @@ const AboutUsCard = () => {
 
   useEffect(() => {
     if (data && data.length > 0) {
-      // Har safar sahifa reload bo'lganda tasodifiy rasm tanlash
       const randomIndex = Math.floor(Math.random() * data.length);
-      setRandomImage(data[randomIndex]); // 'image' tasvir linki bo'lishi kerak
+      setRandomImage(data[randomIndex]);
     }
   }, [data]);
 
@@ -29,26 +28,34 @@ const AboutUsCard = () => {
     );
   }
 
+  const imageUrl = data?.length
+    ? `https://api.fruteacorp.uz/images/${randomImage?.image}`
+    : banner;
+
+  const ImageElement = (
+    <div className="w-full h-auto overflow-hidden rounded-[20px]">
+      <img
+        src={imageUrl}
+        alt="about us page"
+        className="rounded-[20px] duration-[0.2s] cursor-pointer hover:scale-[1.01] w-full object-fill h-auto"
+      />
+    </div>
+  );
+
   return (
     <section className="mt-10 mb-10">
       <div className="container">
-        <a href={randomImage?.link} target="_blank" rel="noopener noreferrer">
-          <div className="w-full h-auto overflow-hidden rounded-[20px]">
-            {data?.length > 0 ? (
-              <img
-                src={`https://api.fruteacorp.uz/images/${randomImage?.image}`}
-                alt="about us page"
-                className="rounded-[20px] duration-[0.2s] cursor-pointer hover:scale-[1.01] w-full object-fill h-auto min-h-[160px]"
-              />
-            ) : (
-              <img
-                src={banner}
-                alt="about us page"
-                className="rounded-[20px]  duration-[0.2s] cursor-pointer hover:scale-[1.01] w-full object-fill h-auto min-h-[160px]"
-              />
-            )}
-          </div>
-        </a>
+        {randomImage?.link ? (
+          <a
+            href={randomImage.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {ImageElement}
+          </a>
+        ) : (
+          ImageElement
+        )}
       </div>
     </section>
   );
